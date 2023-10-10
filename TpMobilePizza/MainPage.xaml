@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TpMobilePizza.MainPage"
+             x:Name="Main">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="https://previews.123rf.com/images/facesportrait/facesportrait2110/facesportrait211000077/176159117-un-homme-d-affaires-souriant-avec-une-pizza-dans-une-bo%C3%AEte-montre-le-pouce-vers-le-haut-homme-barbu.jpg"
+                HeightRequest="300"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to Restaurante PizzaDotNet !!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Enter"
+                Command="{Binding GoToHomeCommand}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
